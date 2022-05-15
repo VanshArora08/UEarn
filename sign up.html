@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- For google icons  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+
+    <title>Sign up</title>
+    <style>
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            padding: 0;
+            margin: 0;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .background {
+            background: url('./images/chitkara.jpg') rgba(0, 0, 0, 0.61);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-blend-mode: darken;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+            filter: blur(3px);
+            min-height: 800px;
+            
+
+        }
+        
+        h2 {
+            font-size: 30px;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background: rgb(0 0 0 / 35%);
+            box-shadow: 0 0 25px rgb(255, 255, 255);
+            border-radius: 25px;
+            width: 500px;
+            margin: 10vh auto 0vh auto;
+	    position:relative;
+	    bottom:40px;
+        }
+        
+        .form{
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            width: 85%;
+        }
+        
+        .form-item {
+            display: flex;
+            width: 90%;
+            background: transparent;
+            margin: 10px auto;
+            align-items: center;
+            border-radius: 15px;
+            border-bottom: 2px solid ;
+        }
+        .form-item:hover {
+            border-bottom: 2px solid rgb(255 0 0);
+        }
+        input {
+            font-size: 18px;
+            width: 80%;
+            height: 30px;
+            outline: none;
+            background: transparent;
+            border: none;
+            margin: auto;
+            color: white;
+        }
+       
+        
+        span {
+            margin: 5px;
+            color: rgb(172, 172, 172);
+            cursor: default;
+            user-select: none;
+            background: rgba(85, 81, 81, 0.637);
+            padding: 5px;
+            border-radius: 15px;
+        }
+        
+        button[type="submit"] {
+            width: 250px;
+            font-size: 20px;
+            margin: 10px auto;
+            padding: 10px 16px;
+            color: white;
+            background:rgba(3 3 3/45%);
+            border: none;
+            text-align: center;
+            border-radius:10px;
+        }
+        button[type="submit"]:hover {
+            width: 200px;
+            height: 50px;
+            background-color: red;
+            animation-name: example;
+            animation-duration:10s;
+            border-radius:10px;
+            animation-iteration-count:infinite;
+            background: rgb(3 3 3/ 45%);
+            border-radius:10px;
+        }
+        p:first-of-type {
+            font-size: 18px;
+            margin: 0;
+        }
+        
+        .options {
+            display: flex;
+            margin:  10px auto;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        button {
+            padding: 5px 16px;
+            font-size: 18px;
+            margin: 5px 15px;
+            width: 180px;
+            color: white;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.7s ease;
+            border-radius:10px;
+        }
+        .fb:hover{
+            background: rgb(5, 5, 73);
+            border: none;
+            box-shadow: 0 0 5px  rgb(5, 5, 73);
+        }
+
+        .gl:hover{
+            background: rgb(73, 5, 5);
+            border: none;
+            box-shadow: 0 0 5px  rgb(73, 5, 5);
+
+        }
+        
+        p {
+            font-size: 18px;
+            margin: 5px;
+        }
+        a{
+            color: white;
+        }
+        a:hover{
+            color: grey;
+        }
+
+        @media screen and (max-width:550px) {
+            .container {
+                width: 90%;
+            }
+            
+        }
+        .logo{
+            width: 150px;
+            size: cover;
+            display: inline;
+        }
+        .nav{
+        display: flex;
+        align-items: center;
+        padding: 2% 6%;
+        justify-content: space-between;
+        }
+
+        @keyframes example { 
+  0%   {background-color: red;}
+  25%  {background-color: BLACK;}
+  50%  {background-color: RED;}
+  100% {background-color: BLACK;}}
+    </style>
+
+</head>
+<body>
+    <img src="/images/ue logo-2.png" alt="not inserted" class="logo nav"></a>
+    <div class="background"></div>
+    <div class="container">
+        <h2>Sign up</h2>
+        <form action="">
+
+            <div class="form-item">
+                
+                <input type="text" name="text" id="text" placeholder="Full name">
+            </div>
+
+            <div class="form-item">
+                
+                <input type="text" name="pass" id="text" placeholder="Roll number ">
+
+            </div>
+            <div class="form-item">
+            <input type="text" name="text" id="text" placeholder="Email">
+            </div>
+            <div class="form-item">
+            <input type="text" name="text" id="text" placeholder="Campus">
+            </div>
+            <div class="form-item">
+            <input type="password" name="pass" id="password" placeholder="Password">
+            </div>
+            <div class="form-item">
+            <input type="password" name="pass" id="password" placeholder="Re-type your password">
+            </div>
+            <button type="submit" action="home.html">REGISTER</button>
+            <p> Or Sign up Using</p>
+            <div class="options">
+                <button class="fb">Facebook</button>
+                <button class="gl">Google</button>
+            </div>
+        </form>
+        <p>Already registered? <a href="/login.html">Log In</a></p>
+
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+        .red{
+            color: red;
+        }
+        .headingmain{
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+        .lines{
+            color: white;
+        }
+        .orderbutton {
+            width: 150px;
+            font-size: 15px;
+            margin: 10px auto;
+            padding: 10px 16px;
+            color: white;
+            background: transparent;
+            border: white solid 1px;
+            text-align: center;
+            margin: 30px 40px;
+            border-radius:10px;
+            box-shadow:  0 0 5px rgb(255, 255, 255);
+            transition: 0.5s;
+        }
+
+        .orderbutton:hover {
+            background: rgb(161, 0, 0);
+            border: none;
+            transition: 0.5s;
+            box-shadow: none;
+
+        }
+        .section2{
+            padding: 30px 0px;
+        }
+        .text1{
+            margin: 50px 0px;
+            font-size: 50px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .flex-container{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 0px 30px;
+            justify-content: center;
+        }
+        .flex-container > div{
+            background: white;
+            box-shadow: 2px 2px 8px gray;
+            border-radius: 20px;
+            margin: 30px;
+            height: 310px ;
+            width: 350px;
+            transition: 0.5s;
+            justify-content: center;
+        }
+        .cards:hover{
+            transform: scale(1.2);
+            transition: 0.5s;
+        }
+        .image{
+            border-radius: 20px;
+            width: 100%;
+        }
+        .cardname{
+            color: rgb(238, 2, 2);
+            font-size: 23px;
+            font-weight: 400;
+            padding: 10px;
+        }
+        #cardname{
+            font-size: 20px;
+        }
+        .carddescript{
+            padding: 10px;
+        }
+        #carddescript{
+            font-size: 15px;
+        }
+        .section3{
+            padding: 30px 0px;
+            color: white;
+            background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/images/squaretwo.jpg);
+            background-position: center;
+            background-size: cover;
+            
+        }
+        .text2{
+            margin: 50px 0px;
+            font-size: 50px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .headingmain1{
+            margin-top: 100px;
+            text-transform: uppercase;
+            font-size: 25px;
+            text-align: center;   
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background: rgb(0 0 0 / 35%);
+            box-shadow: 0 0 10px rgb(255, 255, 255);
+            border-radius: 25px;
+            width: 500px;
+            margin: 10vh auto;;
+            height: 425px;
+        }
+        .title{
+            margin: 25px;
+            font-size: 20px;
+        }
+        
+        input{
+            background: none;
+            width: 500px;
+            margin: 1vh auto;
+            border: none;
+            background: transparent;
+            color: white;
+            outline: none;
+            padding: 0px 20px;
+        }
+
+        .info {
+            text-align: center;
+            display: flex;
+            width: 90%;
+            background: transparent;
+            margin: 10px auto;
+            align-items: center;
+            border-radius: 15px;
+            border-bottom: 2px solid;
+        }
+
+        .info:hover {
+            border-bottom: 2px solid rgb(255 0 0);
+        }
+        button[type="submit"] {
+            width: 150px;
+            font-size: 15px;
+            padding: 10px 16px;
+            color: white;
+            background: transparent;
+            border: white solid 1px;
+            text-align: center;
+            margin: 30px 40px;
+            border-radius:10px;
+            box-shadow:  0 0 5px rgb(255, 255, 255);
+            transition: 0.5s;
+        }
+        button[type="submit"]:hover {
+            background: rgb(161, 0, 0);
+            border: none;
+            transition: 0.5s;
+            box-shadow: none;
+        }
+        .footer-distributed{
+    background: rgb(65, 63, 63);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+  }
+  
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  /* Footer left */
+  
+  .footer-distributed .footer-left{
+    width: 40%;
+  }
+  
+  /* The company logo */
+  
+  .footer-distributed h3{
+    color:  #ffffff;
+    font: normal 36px 'Open Sans', cursive;
+    margin: 0;
+  }
+  
+  .footer-distributed h3 span{
+    color:  lightseagreen;
+  }
+  
+  /* Footer links */
+  
+  .footer-distributed .footer-links{
+    color:  #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+  }
+  
+  .footer-distributed .footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+    font-weight:400;
+    text-decoration: none;
+    color:  inherit;
+  }
+  
+  .footer-distributed .footer-company-name{
+    color:  #222;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  /* Footer Center */
+  
+  .footer-distributed .footer-center{
+    width: 35%;
+  }
+  
+  .footer-distributed .footer-center i{
+    background-color:  #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+  }
+  
+  .footer-distributed .footer-center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+  }
+  
+  .footer-distributed .footer-center p{
+    display: inline-block;
+    color: #ffffff;
+    font-weight:400;
+    vertical-align: middle;
+    margin:0;
+  }
+  
+  .footer-distributed .footer-center p span{
+    display:block;
+    font-weight: normal;
+    font-size:14px;
+    line-height:2;
+  }
+  
+  .footer-distributed .footer-center p a{
+    color:  lightseagreen;
+    text-decoration: none;;
+  }
+  
+  .footer-distributed .footer-links a:before {
+    content: "|";
+    font-weight:300;
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+  }
+  
+  .footer-distributed .footer-links .link-1:before {
+    content: none;
+  }
+  
+  /* Footer Right */
+  
+  .footer-distributed .footer-right{
+    width: 20%;
+  }
+  
+  .footer-distributed .footer-company-about{
+    line-height: 20px;
+    color:  #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  .footer-distributed .footer-company-about span{
+    display: block;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .footer-distributed .footer-icons{
+    margin-top: 25px;
+  }
+  
+  .footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  #33383b;
+    border-radius: 2px;
+  
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+  
+    margin-right: 3px;
+    margin-bottom: 5px;
+  }
+    </style>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"> <img src="/images/ue logo-2.png" alt="not inserted" class="logo"></a>
+            <div class="navLinks" id="navlinks">
+                <i class="fa fa-times fanav" onclick="HideMenu()" id="cross"></i>
+                <ul>
+                    <li><a href="/home.html" class="activetab">HOME</a></li>
+                    <li><a href="/about.html">ABOUT</a></li>
+                    <li><a href="/orders.html">ORDERS</a></li>
+                    <li><a href="/contact.html">CONTACT</a></li>
+                    <li><a href=""> DASHBOARD &nbsp;<i class="fa fa-user-circle-o" style="font-size: 24px; color: red;"></i></a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars fanav" onclick="showMenu()" id="bars"></i>
+        </nav>
+        <div class="maintext">
+            <h1 class="headingmain">Think, Choose, <span class="red">Order, </span> Delievered, Eat, <span class="red">Enjoy,</span> and Repeat</h1>
+            <p class="lines">Life is so much better when you have an order on the way</p>
+            <a href="#postordercontainer"><button class="orderbutton" type="submit">Post Order</button></a>
+            <a href="#flex-container"><button class="orderbutton" type="submit">Deliever Order</button></a>
+        </div>
+    </section>
+    <section class="section2" id='flex-container'>
+        <h1 class="text1">Choose an <span class='red'>outlet</span> to pick order</h1>
+           <div class="flex-container">
+               <div class="cards"><img class='image'src="/images/squareone.jpg" alt="squareone">
+                  <p class="cardname">Square One</p>
+                  <p class="carddescript">Square One-CU Punjab</p>
+               </div>
+               <div class="cards"><img class='image'src="/images/squaretwo.jpg" alt="squaretwo">
+                   <p class="cardname">Square Two</p>
+                   <p class="carddescript">Square Two-CU Punjab</p>
+               </div>
+               <div class="cards"><img class='image'src="/images/circle1.jpg" alt="circleone">
+                   <p class="cardname">Circle One</p>
+                   <p class="carddescript">Circle One-CU Punjab</p>
+               </div>
+               <div class="cards"><img class='image'src="/images/tuckshop.jpg" alt="tuckshop">
+                   <p class="cardname" id='cardname'>Boys Hostel Tuckshop</p>
+                   <p class="carddescript" id='carddescript'>Boys Hostel Tuckshop-CU Punjab</p>
+               </div>
+               <div class="cards"><img class='image'src="/images/foodcourt.jpg" alt="foodcourt">
+                   <p class="cardname">Food Court</p>
+                   <p class="carddescript">Food Court-CU Punjab</p>
+               </div>
+           </div>
+    </section>
+    <section class="section3" id="postordercontainer">
+        <h1 class="text2">Post an <span class="red">Order</span></h1>
+        <div class="post-container">
+            <h1 class="headingmain1">Your favourite <span class="red">food delievery</span> partner</h1>
+            <div class="form">
+                <span class="title">
+                    <h1>Order Info</h1>
+                </span>
+                <div class="info">
+                    <input type='text' name='name' id='name' placeholder="&nbsp;&nbsp;&nbsp; Enter Your Name Here">
+                </div>
+                <div class="info">
+                    <input type='text' name='name' id='name' placeholder="&nbsp;&nbsp;&nbsp;Enter Your Order No. Here">
+                </div>
+                <div class='info'>
+                    <input type='text' name='name' id='name' placeholder="&nbsp;&nbsp;&nbsp;From where to pick order">
+                </div>
+                <div class="info">
+                    <input type='text' name='name' id='name' placeholder="&nbsp;&nbsp;&nbsp;List your order here">
+                </div>
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <h3 class="footerl"><img src="images/ue logo-2.png" alt="not inserted" class="logo nav"></h3>
+            <p class="footer-links">
+                <a href="/home.html" class="link-1">Home</a>
+                <a href="/profile.html">Profile</a>
+                <a href="/ABOUT.html">About</a>
+                <a href="/contact.html">Contact</a>
+            </p>
+
+            <p class="footer-company-name">U-EARN © 2022</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><a style="color: white;" href="https://www.google.com/maps/place/Chitkara+University/@30.5160865,76.6575891,17z/data=!4m12!1m6!3m5!1s0x390fc32344a6e2d7:0x81b346dee91799ca!2sChitkara+University!8m2!3d30.5160865!4d76.6597778!3m4!1s0x390fc32344a6e2d7:0x81b346dee91799ca!8m2!3d30.5160865!4d76.6597778" target="_blank"><span>CHITKARA UNIVERSITY</span> RAJPURA,PUNJAB</a></p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+91 9350533071</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com" target="_blank" style="color: white;">support@company.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>Our Company works for welfare of students in hostel, which helps them to earn money within the campus and also to get their orders delivered to their hostel</span>
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        var bars = document.getElementById("bars");
+        var cross = document.getElementById("cross");
+        function showMenu() {
+            navlinks.style.right = "0";
+            bars.style.visibility = "hidden";
+            navlinks.style.transition = "0.5s";
+        }
+        function HideMenu() {
+            navlinks.style.right = "-200px";
+            navlinks.style.transition = "0.5s";
+            bars.style.visibility = "visible";
+        }
+    </script>
+</body>
+
+</html>
+</body>
+
+</html>

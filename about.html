@@ -1,0 +1,198 @@
+Varun, [30-12-2021 19:06]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<style>
+    body{
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(/chitkaraUniversity-1.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .logo{
+        size: cover;
+        display: inline;
+        width: 150px;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        padding: 2%,6%;
+        justify-content: space-between;
+    }
+    .navlinks{
+        flex: 1;
+        text-align: right;
+    }
+    .navlinks ul li {
+        display: inline-block;
+        list-style: none;
+        padding: 8px,12px ;
+        position: relative;
+    }
+    .navlinks ul li a{
+        color: white;
+        height: 2px;
+        background: red;
+        width: 0%;
+        margin: auto;
+        display: block;
+    }
+    .navlinks ul li::after{
+        content: "";
+        background: red;
+        height: 2px;
+        width: 0%;
+        margin: auto;
+        display: block;
+        
+    }
+    .navLinks ul li:hover:after{
+    width: 100%;
+    transition: 0.5s;
+}
+.heading{
+    text-align: center;
+    font-size: 70px;
+}
+.para{
+    text-align: center;
+    font-size: 30px;
+
+}
+.about{
+    font-size:25px;
+    text-align: center;
+
+}
+.team{
+    text-align: center;
+    font-size: 50px;
+}
+.flexcontainer{
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        margin: 0px,30px;
+        flex-direction: row;
+    
+        
+
+
+    }
+    .card{
+        background: white;
+        box-shadow: 2px,2px,8px, gray;
+        border-radius: 20px;
+        margin: 30px;
+        height: fit-content;
+        width: 350px;
+        transition-duration: 1s;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        flex-direction: row;
+        box-shadow: gray;
+        overflow: hidden;
+    }
+    .card:hover{
+        transform: scale(1.2);
+        transition: 0.5s;
+    }
+    .image{
+        border-radius: 20px;
+        width: 100%;
+    }
+    .cardname{
+        color: rgb(238, 2,2);
+        font-size: 30px;
+        font-weight: 400;
+        padding: 10px;
+    }
+    #cardname{
+        font-size: 20px;
+    }
+    .cardscript{
+        padding: 10px;
+    }
+    #cardscript{
+        font-size: 30px;
+    }
+</style>
+<body>
+    <section class="section1">
+        <nav>
+           <a href=""> <img src="/ue logo-2.png" alt="logo" class="logo"></a>
+           <div class="navlinks" id="navlinks">
+               <ul>
+                   <li><a href="/home.html">HOME</a></li>
+                   <li><a href="/orders.html">ORDERS</a></li>
+                   <li><a href="/contact.html">CONTACT</a></li>
+                   <li><a href="/">PROFILE</a></li>
+               </ul>
+           </div>
+        </nav>
+        <div class="heading">
+            <h1>
+                ABOUT <span style="color: red;">US</span>
+            </h1>
+            <p class="para">
+                We are students of <span style="color: red;"> CHITKARA UNIVERSITY</span>. We are working 
+                on a project by which students can earn some money in the 
+                campus.We are introducing <span style="color: red;"> CHITKARA'S</span> own currency named
+                as <span style="color: red;"> CHITS</span>.In this project you can simply earn some ammount 
+                by simply delivering orders.Suppose somebody has posted 
+                a order from square one, you will get a notification of
+                that if you are nearby and you want to deliver that order
+                you can accept the order. After accepting the order you will
+                get order number , you have to collect that order and deliver 
+                it to its destination, after you delivered the order you 
+                will get <span style="color: red;"> CHITS</span> creditted to your wallet.After that you can
+
+Varun, [30-12-2021 19:06]
+redeem them to your <span style="color: red;"> U-FOOD</span> wallet. 
+
+            </p>
+
+
+        </div>
+    </section>
+ 
+    <section class="scetion3">
+        <div class="team">
+            <h1>OUR <span style="color: red;">TEAM</span></h1></div>
+        <div class="flexcontainer">
+                <div class="card"><img class="image" src="/IMG-20210627-WA0122.jpg" alt="VISHD">
+                <p class="cardname">VISHD KHURANA</p>
+                <p class="cardscript">developer</p>
+                </div>
+                <div class="card"><img class="image" src="/VANSH.jpeg" alt="VANSH">
+                <p class="cardname">VANSH ARORA </p>
+                <p class="cardscript">developer</p>
+                </div>
+                <div class="card"><img class="image" src="/VARUN.jpeg" alt="VARUN">
+                    <p class="cardname">VARUN KUMAR</p>
+                    <p class="cardscript">devloper</p>
+        
+                </div>
+                <div class="card"><img class="image" src="/vikas.jpeg" alt="VIKAS">
+                    <p class="cardname">VIKAS GOYAL</p>
+                    <p class="cardscript"> developer</p>
+        
+                </div>
+                <div class="card"><img class="image" src="/WhatsApp Image 2021-12-29 at 4.30.39 PM.jpeg" alt="vaibhav">
+                    <p class="cardname">VAIBHAV AMERIA </p>
+                    <p class="cardscript">dveloper</p>
+        
+
+        
+
+        </div>
+    </section>
+    
+</body>
+</html>
