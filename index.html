@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>UEarn</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"> <img src="/images/ue logo-2.png" alt="not inserted" class="logo"></a>
+            <div class="navLinks" id="navlinks">
+                <i class="fa fa-times fanav" onclick="HideMenu()" id="cross"></i>
+                <ul>
+                    <li><a href="home.html" class="activetab opt">HOME</a></li>
+                    <li><a href="" class="opt">ABOUT</a></li>
+                    <li><a href="/orders.html" class="opt">ORDERS</a></li>
+                    <li><a href="/contact.html" class="opt">CONTACT</a></li>
+                    <li><a href="profile.html" class="opt"> DASHBOARD &nbsp;<i class="fa fa-user-circle-o" style="font-size: 24px;color: red;"></i></a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars fanav" onclick="showMenu()" id="bars"></i>
+        </nav>
+        <div class="maintext">
+            <h1 class="headingmain">WORK HARD, MAKE <span style="color: red;"> MONEY</span>, HAVE FUN</h1>
+            <p style="font-size: 20px; color: white;">Now, get daily use items delivered at your hostel in just few clicks</p>
+        </div>
+    </section>
+    <section class="chitsIntro">
+        <div class="intro1">
+            <h1>Introducing <span class="red">Chits</span></h1>
+        </div>
+        <div class="flexcontainer">
+            <div data-aos="fade-right">
+            <p class="chitsinfo">CHITS IS Chitkara's new Cryptocurrency. Whenever you deliver a order posted by somebody , you get CHITS. You can get these CHITS availed with the help of U-Food.</p></div>
+            <div data-aos="flip-left"><img src="/images/Chits2.png" alt="" class="chitsimg" id="chitsicon"></div>
+        </div>    
+    </section>
+    <section class="socials">
+    </section>
+    <section class="flex-con">
+        <div class="card ca1" data-aos="fade-up">
+            <h2 class="cardhead">Post <span class="red">Order</span></h2>
+            <br>
+            <p class="carddet">UEarn helps you to get your orders delivered at your hostel which helps to save your precious time. Click on Post order button to order something to your hostel.</p>
+            <br><br><br>
+            <a href="/orders.html"><span class="button">Post <span class="red">Order</span></a>
+        </div>
+        <div class="card ca2" data-aos="fade-down">
+            <h2 class="cardhead">Earn <span class="red">Money</span></h2>
+            <br>
+            <p class="carddet">UEarn helps you to utilize your time in earning money just by delivering stuffs inside your campus. Click on Deliver order button to start earning within your campus.</p>
+            <br><br><br>
+            <a href="/orders.html"><span class="button">Deliver <span class="red">Order</span></a>
+        </div>
+    </section>
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <h3 class="footerl"><img src="images/ue logo-2.png" alt="not inserted" class="logo nav"></h3>
+            <p class="footer-links">
+                <a href="/home.html" class="link-1">Home</a>
+                <a href="/profile.html">Profile</a>
+                <a href="/ABOUT.html">About</a>
+                <a href="/contact.html">Contact</a>
+            </p>
+
+            <p class="footer-company-name">U-EARN © 2022</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><a style="color: white;" href="https://www.google.com/maps/place/Chitkara+University/@30.5160865,76.6575891,17z/data=!4m12!1m6!3m5!1s0x390fc32344a6e2d7:0x81b346dee91799ca!2sChitkara+University!8m2!3d30.5160865!4d76.6597778!3m4!1s0x390fc32344a6e2d7:0x81b346dee91799ca!8m2!3d30.5160865!4d76.6597778" target="_blank"><span>CHITKARA UNIVERSITY</span> RAJPURA,PUNJAB</a></p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+91 9350533071</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com" target="_blank" style="color: white;">support@company.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>Our Company works for welfare of students in hostel which helps them to earn money within the campus and also to get their orders delivered to their hostel</span>
+                
+                
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <script>
+        var navlinks=document.getElementById("navlinks");
+        var bars=document.getElementById("bars");
+        var cross=document.getElementById("cross");
+        function showMenu(){
+            navlinks.style.right="0";
+            bars.style.visibility="hidden";
+            navlinks.style.transition="0.5s";
+        }
+        function HideMenu(){
+            navlinks.style.right="-200px";
+            navlinks.style.transition="0.5s";
+            bars.style.visibility="visible";
+        }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ 
+            offset:300,
+            duration: 800
+        });
+    </script>
+
+</body>
+</html>
